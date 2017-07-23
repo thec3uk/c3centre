@@ -1,0 +1,108 @@
+baseURL = "http://www.thec3centre.uk/"
+languageCode = "en-us"
+title = "C3 Centre"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "C3 Centre"
+	description = "C3 Centre hire for community events"
+
+	# The path must be relative to the static folder
+	favicon = "favicomatic/favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "C3 Centre"
+
+		[params.navigation.links]
+			about     = "About"
+			services  = "Why us?"
+			portfolio = "Gallery"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Your next event is here"
+		subtitle   = "Cambridge based event/conference space for hire"
+		buttonText = "Book Now"
+
+
+	# About section
+	[params.about]
+		headline    = "We've got what you need!"
+		description = "Whether your organising a business conference, a birthday bash or even a comedy evening, we have the facilities to make your event a success"
+		# buttonText  = "Get started!"
+
+
+	# Service section
+	[params.services]
+		headline = "Our facilities"
+
+        [[params.services.list]]
+            icon = "fa-lightbulb-o "
+            title = "Lights, Camera, Action!"
+            description = "Our state of the art media setup will give just the atmosphere you need."
+
+        [[params.services.list]]
+			icon = "fa-volume-up"
+			title = "Is this thing on?"
+			description = "Our AV setup is tested regularly to ensure this never happens for you."
+
+		[[params.services.list]]
+            icon = "fa-comments-o"
+            title = "Find the perfect fit"
+            description = "With plenty of rooms of multiple sizes, we can do small gatherings to the large gigs"
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "Served with Love"
+            description = "Our willing staff are always on hand to help with your every need."
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+    # # Aside section
+	# [params.aside]
+	# 	headline = "Get the Creative Theme for Hugo"
+    # 
+	# 	[params.aside.button]
+	# 		text = "Download now"
+	# 		link = "//github.com/digitalcraftsman/hugo-creative-theme"
+
+	# Contact section
+	[params.contact]
+		headline = "Let's Chat"
+		description = "Like what you see? Contact us to secure your booking today."
+		phone = "01223 844415"
+		email = "centrehire@thec3.uk"
+
+	# Google Maps section
+	[params.location]
+		latitude  = "52.2004073"
+		longitude = "0.1571609"
+		maps_api_key = ""
