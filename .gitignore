@@ -4,6 +4,8 @@
 
 node_modules/
 .sass-cache/
+/static/img
+/static/css
 
 ## OS Files
 # Windows
