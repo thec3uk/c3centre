@@ -1,0 +1,28 @@
+{{ "<!-- HEADER -->" | safeHTML }}
+<link rel="stylesheet" href="{{ "css/slider.css" | absURL }}">
+<header>
+    <figure id="showcase">
+      <section class="showcase-slide"></section>
+      <section class="showcase-slide"></section>
+      <section class="showcase-slide"></section>
+      <section class="showcase-slide"></section>
+      <section class="showcase-slide"></section>
+    </figure>
+    <div class="header-content">
+        <div class="header-content-inner">
+            {{ with .Site.Params.hero.slogan }}
+                <h1>{{ . | markdownify  }}</h1>
+            {{ end }}
+            {{ if and .Site.Params.hero.slogan .Site.Params.hero.subtitle }}
+                <hr>
+            {{ end }}
+            {{ with .Site.Params.hero.subtitle }}
+                <p>{{ . | markdownify }}</p>
+            {{ end }}
+            {{ with .Site.Params.hero.buttonText }}
+                <a href="#contact" class="btn btn-primary btn-xl page-scroll">{{ . }}</a>
+            {{ end }}
+        </div>
+    </div>
+
+</header>

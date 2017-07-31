@@ -1,0 +1,132 @@
+@import "compass/css3";
+
+header {
+  background-color: #111;
+  background-image: none;
+}
+
+.header-content-inner {
+    z-index: 10;
+}
+
+#showcase {
+  z-index: -100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;  
+  width: 1500px;
+  height: 800px;
+}
+
+.showcase-slide {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+  background-size: cover;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    @include transition(all .5s);
+  }
+}
+
+// need to change image sizes or
+
+$img-01: "../img/outside3.jpg";
+$img-02: "../img/worship2.jpg";
+$img-03: "../img/av1.jpg";
+$img-04: "../img/comedy1.jpg";
+$img-05: "../img/worship3.jpg";
+
+$sections: (
+  1: (
+    (23% 18%, 95% 13%, 100% 91%, 55% 87%),
+    (95% 10%, 100% 80%, 62% 77%, 45% 12%),
+    (100% 67%, 48% 63%, 28% 9%, 95% 3%),
+    (78% 72%, 58% 34%, 95% 27%, 100% 73%),
+    (38% 79%, 45% 21%, 100% 16%, 95% 83%),
+  ),
+  2: (
+    (0% 7%, 100% 9%, 95% 93%, 5% 95%),
+    (100% 3%, 95% 95%, 5% 90%, 0% 5%),
+    (95% 83%, 5% 78%, 0% 6%, 100% 11%),
+    (5% 79%, 0% 21%, 100% 16%, 95% 83%),
+    (0% 72%, 5% 34%, 95% 27%, 100% 73%),
+  ),
+  3: (
+    (5% 11%, 100% 14%, 95% 88%, 0% 91%),
+    (100% 14%, 95% 84%, 0% 91%, 5% 7%),
+    (95% 79%, 0% 86%, 5% 7%, 100% 3%),
+    (0% 85%, 5% 14%, 100% 3%, 95% 95%),
+    (5% 94%, 0% 18%, 100% 21%, 95% 86%),
+  ),
+  4: (
+    (5% 18%, 100% 21%, 95% 73%, 0% 83%),
+    (100% 21%, 95% 87%, 0% 77%, 5% 18%),
+    (100% 87%, 0% 67%, 5% 8%, 95% 12%),
+    (0% 94%, 5% 18%, 100% 21%, 95% 86%),
+    (0% 77%, 5% 18%, 100% 21%, 95% 92%),
+  ),
+  5: (
+    (4% 24%, 54% 10%, 45% 89%, 0% 77%),
+    (57% 31%, 45% 67%, 0% 77%, 5% 18%),
+    (46% 57%, 3% 67%, 0% 8%, 72% 12%),
+    (0% 77%, 5% 18%, 47% 21%, 32% 67%),
+    (0% 85%, 5% 14%, 67% 30%, 67% 66%),
+  )
+);
+
+@each $section, $key in $sections {
+  $bg: -25 + $section*25;
+  $clip-01: nth($key, 1);
+  $clip-02: nth($key, 2);
+  $clip-03: nth($key, 3);
+  $clip-04: nth($key, 4);
+  $clip-05: nth($key, 5);
+  
+  .showcase-slide:nth-child(#{$section}) {
+    @include animation(section-#{$section} 10s both infinite);
+  }
+
+  @include keyframes(section-#{$section}) {
+    0%, 15%, 100% { 
+      background: url($img-01) #{$bg}#{'%'} 0%;
+      background-size: cover;
+      -webkit-clip-path: polygon($clip-01);
+    }
+    20%, 35% {
+      background: url($img-02) #{$bg}#{'%'} 0%;
+      background-size: cover;
+      -webkit-clip-path: polygon($clip-02);
+    }
+    40%, 55% {
+      background: url($img-03) #{$bg}#{'%'} 0%;
+      background-size: cover;
+      -webkit-clip-path: polygon($clip-03);
+    }
+    60%, 75% { 
+      background: url($img-04) #{$bg}#{'%'} 0%;
+      background-size: cover;
+      -webkit-clip-path: polygon($clip-04);
+    }
+    80%, 95% { 
+      background: url($img-05) #{$bg}#{'%'} 0%;
+      background-size: cover;
+      -webkit-clip-path: polygon($clip-05);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #showcase {
+    position: absolute;
+    top: -115px; left: -200px;
+    margin: 0;
+    @include scale(.65);
+  }
+}

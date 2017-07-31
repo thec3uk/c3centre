@@ -43,8 +43,8 @@ googleAnalytics = ""
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Your next event is here"
-		subtitle   = "Cambridge based event/conference space for hire"
+		slogan     = "Your next event here?"
+		subtitle   = "Cambridge based community event space for hire"
 		buttonText = "Book Now"
 
 
