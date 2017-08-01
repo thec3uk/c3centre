@@ -4,7 +4,8 @@
   "description": "Website for Centre hire",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "preinstall": "gem install compass",
+      "postinstall": "gulp build && hugo"
   },
   "repository": {
     "type": "git",
