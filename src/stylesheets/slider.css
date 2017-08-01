@@ -36,6 +36,11 @@ header {
   transition: all 0.5s;
 }
 
+.img-loader {
+  background-image: url("../img/outside3.jpg"), url("../img/worship2.jpg"), url("../img/av1.jpg"), url("../img/comedy1.jpg"), url("../img/worship3.jpg");
+  display: none;
+}
+
 .showcase-slide:nth-child(1) {
   -moz-animation: section-1 10s both infinite;
   -webkit-animation: section-1 10s both infinite;
@@ -56,17 +61,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 0% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(100% 67%, 48% 63%, 28% 9%, 95% 3%);
+    -webkit-clip-path: polygon(95% 3%, 100% 67%, 48% 63%, 28% 9%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 0% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(78% 72%, 58% 34%, 95% 27%, 100% 73%);
+    -webkit-clip-path: polygon(100% 73%, 78% 72%, 58% 34%, 95% 27%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 0% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(38% 79%, 45% 21%, 100% 16%, 95% 83%);
+    -webkit-clip-path: polygon(95% 83%, 38% 79%, 45% 21%, 100% 16%);
   }
 }
 @-webkit-keyframes section-1 {
@@ -83,17 +88,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 0% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(100% 67%, 48% 63%, 28% 9%, 95% 3%);
+    -webkit-clip-path: polygon(95% 3%, 100% 67%, 48% 63%, 28% 9%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 0% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(78% 72%, 58% 34%, 95% 27%, 100% 73%);
+    -webkit-clip-path: polygon(100% 73%, 78% 72%, 58% 34%, 95% 27%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 0% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(38% 79%, 45% 21%, 100% 16%, 95% 83%);
+    -webkit-clip-path: polygon(95% 83%, 38% 79%, 45% 21%, 100% 16%);
   }
 }
 @keyframes section-1 {
@@ -110,17 +115,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 0% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(100% 67%, 48% 63%, 28% 9%, 95% 3%);
+    -webkit-clip-path: polygon(95% 3%, 100% 67%, 48% 63%, 28% 9%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 0% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(78% 72%, 58% 34%, 95% 27%, 100% 73%);
+    -webkit-clip-path: polygon(100% 73%, 78% 72%, 58% 34%, 95% 27%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 0% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(38% 79%, 45% 21%, 100% 16%, 95% 83%);
+    -webkit-clip-path: polygon(95% 83%, 38% 79%, 45% 21%, 100% 16%);
   }
 }
 .showcase-slide:nth-child(2) {
@@ -143,17 +148,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 25% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(95% 83%, 5% 78%, 0% 6%, 100% 11%);
+    -webkit-clip-path: polygon(100% 11%, 95% 83%, 5% 78%, 0% 6%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 25% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(5% 79%, 0% 21%, 100% 16%, 95% 83%);
+    -webkit-clip-path: polygon(95% 83%, 5% 79%, 0% 21%, 100% 16%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 25% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 72%, 5% 34%, 95% 27%, 100% 73%);
+    -webkit-clip-path: polygon(100% 73%, 0% 72%, 5% 34%, 95% 27%);
   }
 }
 @-webkit-keyframes section-2 {
@@ -170,17 +175,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 25% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(95% 83%, 5% 78%, 0% 6%, 100% 11%);
+    -webkit-clip-path: polygon(100% 11%, 95% 83%, 5% 78%, 0% 6%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 25% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(5% 79%, 0% 21%, 100% 16%, 95% 83%);
+    -webkit-clip-path: polygon(95% 83%, 5% 79%, 0% 21%, 100% 16%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 25% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 72%, 5% 34%, 95% 27%, 100% 73%);
+    -webkit-clip-path: polygon(100% 73%, 0% 72%, 5% 34%, 95% 27%);
   }
 }
 @keyframes section-2 {
@@ -197,17 +202,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 25% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(95% 83%, 5% 78%, 0% 6%, 100% 11%);
+    -webkit-clip-path: polygon(100% 11%, 95% 83%, 5% 78%, 0% 6%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 25% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(5% 79%, 0% 21%, 100% 16%, 95% 83%);
+    -webkit-clip-path: polygon(95% 83%, 5% 79%, 0% 21%, 100% 16%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 25% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 72%, 5% 34%, 95% 27%, 100% 73%);
+    -webkit-clip-path: polygon(100% 73%, 0% 72%, 5% 34%, 95% 27%);
   }
 }
 .showcase-slide:nth-child(3) {
@@ -230,17 +235,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 50% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(95% 79%, 0% 86%, 5% 7%, 100% 3%);
+    -webkit-clip-path: polygon(100% 3%, 95% 79%, 0% 86%, 5% 7%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 50% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 85%, 5% 14%, 100% 3%, 95% 95%);
+    -webkit-clip-path: polygon(95% 95%, 0% 85%, 5% 14%, 100% 3%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 50% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(5% 94%, 0% 18%, 100% 21%, 95% 86%);
+    -webkit-clip-path: polygon(95% 86%, 5% 94%, 0% 18%, 100% 21%);
   }
 }
 @-webkit-keyframes section-3 {
@@ -257,17 +262,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 50% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(95% 79%, 0% 86%, 5% 7%, 100% 3%);
+    -webkit-clip-path: polygon(100% 3%, 95% 79%, 0% 86%, 5% 7%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 50% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 85%, 5% 14%, 100% 3%, 95% 95%);
+    -webkit-clip-path: polygon(95% 95%, 0% 85%, 5% 14%, 100% 3%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 50% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(5% 94%, 0% 18%, 100% 21%, 95% 86%);
+    -webkit-clip-path: polygon(95% 86%, 5% 94%, 0% 18%, 100% 21%);
   }
 }
 @keyframes section-3 {
@@ -284,17 +289,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 50% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(95% 79%, 0% 86%, 5% 7%, 100% 3%);
+    -webkit-clip-path: polygon(100% 3%, 95% 79%, 0% 86%, 5% 7%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 50% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 85%, 5% 14%, 100% 3%, 95% 95%);
+    -webkit-clip-path: polygon(95% 95%, 0% 85%, 5% 14%, 100% 3%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 50% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(5% 94%, 0% 18%, 100% 21%, 95% 86%);
+    -webkit-clip-path: polygon(95% 86%, 5% 94%, 0% 18%, 100% 21%);
   }
 }
 .showcase-slide:nth-child(4) {
@@ -317,17 +322,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 75% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(100% 87%, 0% 67%, 5% 8%, 95% 12%);
+    -webkit-clip-path: polygon(95% 12%, 100% 87%, 0% 67%, 5% 8%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 75% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 94%, 5% 18%, 100% 21%, 95% 86%);
+    -webkit-clip-path: polygon(95% 86%, 0% 94%, 5% 18%, 100% 21%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 75% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 77%, 5% 18%, 100% 21%, 95% 92%);
+    -webkit-clip-path: polygon(95% 92%, 0% 77%, 5% 18%, 100% 21%);
   }
 }
 @-webkit-keyframes section-4 {
@@ -344,17 +349,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 75% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(100% 87%, 0% 67%, 5% 8%, 95% 12%);
+    -webkit-clip-path: polygon(95% 12%, 100% 87%, 0% 67%, 5% 8%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 75% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 94%, 5% 18%, 100% 21%, 95% 86%);
+    -webkit-clip-path: polygon(95% 86%, 0% 94%, 5% 18%, 100% 21%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 75% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 77%, 5% 18%, 100% 21%, 95% 92%);
+    -webkit-clip-path: polygon(95% 92%, 0% 77%, 5% 18%, 100% 21%);
   }
 }
 @keyframes section-4 {
@@ -371,17 +376,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 75% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(100% 87%, 0% 67%, 5% 8%, 95% 12%);
+    -webkit-clip-path: polygon(95% 12%, 100% 87%, 0% 67%, 5% 8%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 75% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 94%, 5% 18%, 100% 21%, 95% 86%);
+    -webkit-clip-path: polygon(95% 86%, 0% 94%, 5% 18%, 100% 21%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 75% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 77%, 5% 18%, 100% 21%, 95% 92%);
+    -webkit-clip-path: polygon(95% 92%, 0% 77%, 5% 18%, 100% 21%);
   }
 }
 .showcase-slide:nth-child(5) {
@@ -404,17 +409,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 100% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(46% 57%, 3% 67%, 0% 8%, 72% 12%);
+    -webkit-clip-path: polygon(72% 12%, 46% 57%, 3% 67%, 0% 8%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 100% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 77%, 5% 18%, 47% 21%, 32% 67%);
+    -webkit-clip-path: polygon(32% 67%, 0% 77%, 5% 18%, 47% 21%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 100% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 85%, 5% 14%, 67% 30%, 67% 66%);
+    -webkit-clip-path: polygon(67% 66%, 0% 85%, 5% 14%, 67% 30%);
   }
 }
 @-webkit-keyframes section-5 {
@@ -431,17 +436,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 100% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(46% 57%, 3% 67%, 0% 8%, 72% 12%);
+    -webkit-clip-path: polygon(72% 12%, 46% 57%, 3% 67%, 0% 8%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 100% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 77%, 5% 18%, 47% 21%, 32% 67%);
+    -webkit-clip-path: polygon(32% 67%, 0% 77%, 5% 18%, 47% 21%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 100% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 85%, 5% 14%, 67% 30%, 67% 66%);
+    -webkit-clip-path: polygon(67% 66%, 0% 85%, 5% 14%, 67% 30%);
   }
 }
 @keyframes section-5 {
@@ -458,17 +463,17 @@ header {
   40%, 55% {
     background: url("../img/av1.jpg") 100% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(46% 57%, 3% 67%, 0% 8%, 72% 12%);
+    -webkit-clip-path: polygon(72% 12%, 46% 57%, 3% 67%, 0% 8%);
   }
   60%, 75% {
     background: url("../img/comedy1.jpg") 100% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 77%, 5% 18%, 47% 21%, 32% 67%);
+    -webkit-clip-path: polygon(32% 67%, 0% 77%, 5% 18%, 47% 21%);
   }
   80%, 95% {
     background: url("../img/worship3.jpg") 100% 0%;
     background-size: cover;
-    -webkit-clip-path: polygon(0% 85%, 5% 14%, 67% 30%, 67% 66%);
+    -webkit-clip-path: polygon(67% 66%, 0% 85%, 5% 14%, 67% 30%);
   }
 }
 @media (max-width: 1000px) {
