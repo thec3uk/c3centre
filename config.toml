@@ -26,7 +26,7 @@ googleAnalytics = ""
 	description = "C3 Centre hire for community events"
 
 	# The path must be relative to the static folder
-	favicon = "favicomatic/favicon.ico"
+	favicon = "img/favicomatic/favicon.ico"
 
 
 	# Navigation
