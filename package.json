@@ -4,7 +4,7 @@
   "description": "Website for Centre hire",
   "main": "index.js",
   "scripts": {
-      "preinstall": "gem install --no-rdoc --no-ri sass -v 3.4.22 compass",
+      "preinstall": "gem install --no-rdoc --no-ri sass:3.4.22 compass",
       "postinstall": "gulp build && hugo"
   },
   "repository": {
