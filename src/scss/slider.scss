@@ -5,18 +5,23 @@ header {
   background-image: none;
 }
 
-.header-content-inner {
+header .header-content {
     z-index: 10;
 }
 
 #showcase {
-  z-index: -100;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;  
-  width: 1500px;
+  width: 100%;
   height: 800px;
+}
+
+@media (max-width: 1000px) {
+  #showcase {
+    z-index: -10
+  }
 }
 
 .showcase-slide {
@@ -132,12 +137,50 @@ $sections: (
   }
 }
 
-@media (max-width: 1000px) {
-  #showcase {
-    position: absolute;
-    top: -115px; left: -200px;
-    margin: 0;
-    @include scale(.65);
-  }
-}
 
+@media (max-width: 700px) {
+    @each $section, $key in $sections {
+      .showcase-slide:nth-child(#{$section}) {
+        display: none;
+      }
+      .showcase {
+        @include animation(section-1 5s both infinite);
+      }
+
+      @include keyframes(section-1) {
+        0%, 15%, 100% { 
+          background-image: url($img-01);
+          background-position-x: center; 
+          background-size: cover;
+        }
+        20%, 35% {
+          background-image: url($img-02);
+          background-position-x: center; 
+          background-size: cover;
+        }
+        40%, 55% {
+          background-image: url($img-03);
+          background-position-x: center; 
+          background-size: cover;
+        }
+        60%, 75% { 
+          background-image: url($img-04);
+          background-position-x: center; 
+          background-size: cover;
+        }
+        80%, 95% { 
+          background-image: url($img-05);
+          background-position-x: center; 
+          background-size: cover;
+        }
+      }
+    }
+    .showcase-slide:first-child {
+      display: inline-block;
+      min-width: 100%;
+    }
+    header .header-content {
+      position: absolute;
+      top: 150px;
+    }
+}

@@ -4,8 +4,11 @@
 
 node_modules/
 .sass-cache/
+
+# Populated during build processes
 /static/img
 /static/css
+/src/stylesheets
 
 ## OS Files
 # Windows
