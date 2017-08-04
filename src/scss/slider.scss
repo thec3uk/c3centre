@@ -178,6 +178,9 @@ $sections: (
     .showcase-slide:first-child {
       display: inline-block;
       width: 100%;
+      &:after {
+        width: auto;
+      }
     }
     header .header-content {
       position: absolute;
